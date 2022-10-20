@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercício extra 04</title>
+</head>
+<body>
+	<h1>Exercício extra 04</h1>
+	<p id="resultado1">Valor final da variável a: </p>
+	<p id="resultado2">Valor final da variável b: </p>
+	<p id="resultado3">As variáveis são iguais: </p>
+
+	<script type="text/javascript">
+		// Criando as variáveis
+		var a = 3;
+		var b = 3;
+
+		// Incrementando a variável a
+		a++;
+	
+		// Imprimindo as variáveis
+		document.getElementById('resultado1').innerHTML += a;
+		document.getElementById('resultado2').innerHTML += b;
+		document.getElementById('resultado3').innerHTML += a == b;
+	</script>
+
+</body>
+</html>

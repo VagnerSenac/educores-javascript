@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercício extra 11</title>
+</head>
+<body>
+	<h1>Exercício extra 11</h1>
+	<p id="resultado">Você é: </p>
+
+	<script type="text/javascript">
+		// Criando as variáveis
+		var idade = 0;
+		var resp = '';
+
+		// Solicitando a idade ao usuário
+		idade = parseFloat(prompt('Informe sua idade', ''));
+
+		// Verificando a idade informada
+		if(idade >= 18){
+			resp = 'maior de idade';
+		}else{
+			resp = 'menor de idade';
+		}
+
+		// Mostrando a resposta
+		document.getElementById('resultado').innerHTML += resp;
+	</script>
+
+</body>
+</html>

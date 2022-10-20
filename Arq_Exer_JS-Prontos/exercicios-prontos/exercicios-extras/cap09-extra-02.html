@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercício extra 18</title>
+</head>
+<body>
+	<h1>Exercício extra 18</h1>
+	<p id="resultado"></p>
+
+	<script type="text/javascript">
+		// Criando o objeto
+		var  computador = {
+		     processador: 'Intel Core i7',
+		     memoria: '16 GB',
+		     ssd: '500 GB',
+		     motherboard: 'Asus TUF GAMING B550M',
+		     fonte: '600 W',
+
+		     pcCompleto: function() {
+		          return '<ul><li><b>Processador:</b> ' + 
+		          		 this.processador + '</li>' + 
+		          		 '<li><b>Memória:</b> ' + 
+		                 this.memoria + '</li>' + 
+		                 '<li><b>SSD:</b> ' + 
+		                 this.ssd + '</li>' + 
+		                 '<li><b>Placa mãe:</b> ' + 
+		                 this.motherboard + '</li>' + 
+		                 '<li><b>Fonte:</b> ' + 
+		                 this.fonte + '</li></ul>';
+		     }
+		}
+
+		// Mostrando os dados do objeto
+		document.write(computador.pcCompleto());
+	</script>
+
+</body>
+</html>

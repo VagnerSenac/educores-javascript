@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercício extra 16</title>
+</head>
+<body>
+	<h1>Exercício extra 16</h1>
+	<p id="resultado">Cálculo da sua idade: </p>
+
+	<script type="text/javascript">
+		// Criando as variáveis
+		var nome = '';
+		var resp = '';
+		var idade = 0;
+		var calc = 0;
+
+		// Criando a função
+		function calcula(){
+			// Solicita o nome do usuário
+			nome = prompt('Digite seu nome','');
+			// Pergunta ao usuário sobre a maioridade
+			resp = prompt('Você é maior de idade? (s)Sim (n)Não','');
+			// Converte a resposta para minusculo
+			resp = resp.toLowerCase();
+			idade = parseInt(prompt('Digite sua idade',''));
+			// Verifica a resposta s ou n
+			if(resp == 's'){
+				calc = idade * 3;
+			}
+			else{
+				calc = idade * 2;
+			}
+			// Mostra a resposta
+			document.getElementById('resultado').innerHTML += nome + ' seu cálculo é: ' + calc;
+		}
+
+		// Invoca a função
+		calcula();
+	</script>
+
+</body>
+</html>

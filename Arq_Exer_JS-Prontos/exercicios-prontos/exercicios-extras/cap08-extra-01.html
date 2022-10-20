@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercício extra 15</title>
+</head>
+<body>
+	<h1>Exercício extra 15</h1>
+	<p id="resultado"></p>
+
+	<script type="text/javascript">
+		// Criando as variáveis
+		var num  = 0;
+		var cont = 1;
+		var resp = '';
+
+		// Criando a função
+		function mostraTexto(){
+			// Solicita um número para o usuario
+			num = parseInt(prompt('Digite um número de 1 a 30',''));
+			for(cont = 1; cont <= num; cont++){
+				resp += 'Programando em Javascript <br>';
+			}
+			// Mostrando as frases após o laço
+			document.getElementById('resultado').innerHTML = resp;
+		}
+
+		// Invocando a função
+		mostraTexto();
+	</script>
+
+</body>
+</html>

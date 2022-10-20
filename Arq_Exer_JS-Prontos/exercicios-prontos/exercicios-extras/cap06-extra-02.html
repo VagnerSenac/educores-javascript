@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercício extra 12</title>
+</head>
+<body>
+	<h1>Exercício extra 12</h1>
+	<p id="resultado">Seu saldo é: </p>
+
+	<script type="text/javascript">
+		// Criando as variáveis
+		var saldo = 1500;
+		var opcao = 0;
+		var valor = 0;
+
+		// Solicita a operação bancária
+		opcao = parseInt(prompt('Digite a opção: (1) Sacar (2) Depositar',''));
+		valor = parseFloat(prompt('Informe o valor',''));
+		if(opcao == 1){
+			saldo = saldo - valor;
+		}
+		else{
+			saldo = saldo + valor;
+		}
+
+		// Mostra o saldo
+		document.getElementById('resultado').innerHTML += saldo;
+	</script>
+
+</body>
+</html>
